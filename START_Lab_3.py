@@ -4,7 +4,17 @@ def lab3Question1(number, cutoff):
     # Return True if the number is less than the cutoff, False otherwise
     # Also, print a statement of "[Number] is less than [cutoff]" or "[Number] is not less than [cutoff]"
     # Where the [Number] and [cutoff] are the actual numbers passed in
-    pass
+    
+    number = int()
+    cutoff = int()
+
+    if number < cutoff:
+        return True
+        print(str(number) + " is less than " + (str(cutoff))
+    else:
+        return False
+        print(str(number) + " is not less than " + (str(cutoff))
+              
 
 def lab3Question2(decimal_number):
     # Take in an argument of a float (decimal) number.
