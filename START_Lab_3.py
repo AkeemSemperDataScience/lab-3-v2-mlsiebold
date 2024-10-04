@@ -68,5 +68,25 @@ def lab3Question5(temperature, scale_used):
     # Return "Solid" if water is in solid state at that temperature
     # Return "Gas" if water is in gas state at that temperature
     # Return "Invalid" if the temperature or scale are invalid
-    pass
+    
+    if scale_used == 'C':
+        if temperature <= 0:
+            return 'Solid'
+        elif 0 < temperature < 100:
+            return 'Liquid'
+        elif temperature > 100:
+            return 'Gas'
+        else:
+            return 'Invalid'
+    elif scale_used == 'F':
+        if temperature <= 32:
+            return 'Solid'
+        elif 32 < temperature < 212:
+            return 'Liquid'
+        elif temperature > 212:
+            return 'Gas'
+        else:
+            return 'Invalid'
+    else:
+        return 'Invalid'
 
